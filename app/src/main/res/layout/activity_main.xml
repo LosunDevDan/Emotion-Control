@@ -14,12 +14,12 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="215dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="171dp"
         android:ems="10"
         android:hint="email"
         android:inputType="textEmailAddress"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/password_Textfield"
+        app:layout_constraintBottom_toTopOf="@+id/image_Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,8 +27,8 @@
     <EditText
         android:id="@+id/password_Textfield"
         android:layout_width="250dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="368dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="370dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
@@ -41,8 +41,11 @@
     <ImageButton
         android:id="@+id/image_Button"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="434dp" />
+        android:layout_height="0dp"
+        android:layout_marginBottom="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_Textfield"
+        app:srcCompat="@drawable/ic_launcher_background" />
 </androidx.constraintlayout.widget.ConstraintLayout>
