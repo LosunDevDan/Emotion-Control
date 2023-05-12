@@ -4,19 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33aed0"
     tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/roding"
+        android:text="Emotion Control"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/email_Textfield"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
 
     <EditText
         android:id="@+id/email_Textfield"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="215dp"
-        android:layout_marginEnd="56dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
         android:layout_marginBottom="171dp"
+        android:background="@drawable/fileds"
         android:ems="10"
-        android:hint="email"
+        android:hint="  email"
         android:inputType="textEmailAddress"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/image_Button"
@@ -28,9 +45,10 @@
         android:id="@+id/password_Textfield"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="370dp"
+        android:layout_marginBottom="350dp"
         android:ems="10"
-        android:hint="password"
+        android:background="@drawable/fileds"
+        android:hint="  password"
         android:inputType="textPassword"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,14 +56,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_Textfield" />
 
-    <ImageButton
+
+    <Button
         android:id="@+id/image_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="267dp"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/fileds"
+        android:text="Sign in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_Textfield"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:layout_constraintTop_toBottomOf="@+id/email_Textfield" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

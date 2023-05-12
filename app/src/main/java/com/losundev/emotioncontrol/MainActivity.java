@@ -3,9 +3,12 @@ package com.losundev.emotioncontrol;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -16,10 +19,25 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button sign_in;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        addListenerOnButton();
+    }
+
+    public void addListenerOnButton(){
+        sign_in = (Button) findViewById(R.id.image_Button);
+        sign_in.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent("com.losundev.emotioncontrol.MainCalendar");
+                        startActivity(intent);
+                    }
+                });
     }
 
     public void onButtonClick(View v) {
@@ -46,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 
     private void writeStringToFile(Context context, String fileName, String stringToWrite) {
