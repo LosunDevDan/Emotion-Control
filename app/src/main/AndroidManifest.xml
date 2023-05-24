@@ -12,13 +12,34 @@
         android:theme="@style/Theme.EmotionControl"
         tools:targetApi="31">
         <activity
+            android:name=".AdviceActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.losundev.emotioncontrol.AdviceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.losundev.emotioncontrol.StatisticsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainCalendar"
@@ -26,6 +47,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.losundev.emotioncontrol.MainCalendar" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -35,6 +57,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.losundev.emotioncontrol.DailyCalendarActivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -44,6 +67,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.losundev.emotioncontrol.WeekViewActivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -53,11 +77,10 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.losundev.emotioncontrol.EventEditActivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
-
-
 
 </manifest>

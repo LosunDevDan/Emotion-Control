@@ -14,16 +14,16 @@
         android:orientation="horizontal"
         android:layout_marginTop="20dp">
 
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/back"
-            android:textColor="@color/blue"
-            android:background="@null"
-            android:textStyle="bold"
             android:onClick="previousDayAction"
-            android:textSize="20sp"/>
+            android:text="@string/back"
+            android:textColor="#77639C"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/monthDayText"
@@ -39,12 +39,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/forward"
-            android:textColor="@color/blue"
-            android:background="@null"
-            android:textStyle="bold"
             android:onClick="nextDayAction"
-            android:textSize="20sp"/>
+            android:text="@string/forward"
+            android:textColor="#77639C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -61,18 +60,54 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Event"
-        android:textColor="@color/blue"
-        android:background="@null"
-        android:textStyle="bold"
-        android:onClick="newEventAction"
         android:layout_gravity="center"
-        android:textSize="20sp"/>
+        android:onClick="newEventAction"
+        android:text="New Event"
+        android:textColor="#77639C"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
 
-    <ListView
-        android:id="@+id/hourListView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/hourListView"
+            android:layout_width="match_parent"
+            android:layout_height="544dp"
+            android:layout_weight="5">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/stat_btn"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Statistics" />
+
+            <Button
+                android:id="@+id/main_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Main" />
+
+            <Button
+                android:id="@+id/advice_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Advice" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

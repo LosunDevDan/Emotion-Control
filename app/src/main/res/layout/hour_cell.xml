@@ -21,43 +21,43 @@
         android:padding="5dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:background="@color/blue"
-            android:layout_height="match_parent"
-            android:gravity="center"
             android:id="@+id/event1"
-            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roding"
+            android:gravity="center"
             android:lines="2"
-            android:textColor="@color/white"
-            android:text="Event 1"/>
+            android:text="Event 1"
+            android:textColor="#5843B6"
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:background="@color/blue"
-            android:layout_height="match_parent"
-            android:gravity="center"
             android:id="@+id/event2"
-            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roding"
+            android:gravity="center"
             android:lines="2"
-            android:textColor="@color/white"
-            android:text="Event 2"/>
+            android:text="Event 2"
+            android:textColor="#5843B6"
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:background="@color/blue"
-            android:layout_height="match_parent"
-            android:gravity="center"
             android:id="@+id/event3"
-            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roding"
+            android:gravity="center"
             android:lines="2"
-            android:textColor="@color/white"
-            android:text="Event 3"/>
+            android:text="Event 3"
+            android:textColor="#5843B6"
+            android:textSize="15sp" />
 
     </LinearLayout>
 

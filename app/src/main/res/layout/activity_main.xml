@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#33aed0"
     tools:context=".MainActivity">
 
 
@@ -15,14 +14,14 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="80dp"
         android:background="@drawable/roding"
+        android:gravity="center"
         android:text="Emotion Control"
         android:textSize="30sp"
-        android:gravity="center"
+        android:textColor="#5843B6"
         app:layout_constraintBottom_toTopOf="@+id/email_Textfield"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/email_Textfield"

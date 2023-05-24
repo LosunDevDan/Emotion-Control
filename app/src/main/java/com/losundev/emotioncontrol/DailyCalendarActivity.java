@@ -5,6 +5,7 @@ import static com.losundev.emotioncontrol.CalendarUtils.selectedDate;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -21,6 +22,10 @@ public class DailyCalendarActivity extends AppCompatActivity
     private TextView monthDayText;
     private TextView dayOfWeekTV;
     private ListView hourListView;
+    private Button tomenu;
+    private Button tostat;
+    private Button toadvice;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,6 +33,7 @@ public class DailyCalendarActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_calendar);
         initWidgets();
+        addListenerOnButton();
     }
 
     private void initWidgets()
@@ -88,5 +94,35 @@ public class DailyCalendarActivity extends AppCompatActivity
     public void newEventAction(View view)
     {
         startActivity(new Intent(this, EventEditActivity.class));
+    }
+
+    public void addListenerOnButton(){
+        tomenu = (Button) findViewById(R.id.main_btn);
+        tostat = (Button) findViewById(R.id.stat_btn);
+        toadvice = (Button) findViewById(R.id.advice_btn);
+        tomenu.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent("com.losundev.emotioncontrol.MainCalendar");
+                        startActivity(intent);
+                    }
+                });
+        tostat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent("com.losundev.emotioncontrol.StatisticsActivity");
+                        startActivity(intent);
+                    }
+                });
+        toadvice.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent("com.losundev.emotioncontrol.AdviceActivity");
+                        startActivity(intent);
+                    }
+                });
     }
 }

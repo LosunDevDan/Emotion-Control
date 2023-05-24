@@ -13,8 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Weekly"
-        android:textColor="@color/blue"
-        android:background="@null"
+        android:textColor="#77639C"
         android:textStyle="bold"
         android:onClick="weeklyAction"
         android:textSize="20sp"/>
@@ -32,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/back"
-            android:textColor="@color/blue"
+            android:textColor="#77639C"
             android:background="@null"
             android:textStyle="bold"
             android:onClick="previousMonthAction"
@@ -53,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/forward"
-            android:textColor="@color/blue"
+            android:textColor="#77639C"
             android:background="@null"
             android:textStyle="bold"
             android:onClick="nextMonthAction"
@@ -136,7 +135,37 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/calendarRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="525dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/stat_btn"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Statistics" />
+
+        <Button
+            android:id="@+id/main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Main" />
+
+        <Button
+            android:id="@+id/advice_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Advice" />
+    </LinearLayout>
 
 </LinearLayout>
 
