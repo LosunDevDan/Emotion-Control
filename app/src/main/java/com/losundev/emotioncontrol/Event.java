@@ -21,6 +21,7 @@ public class Event
         return events;
     }
 
+
     public static ArrayList<Event> eventsForDateAndTime(LocalDate date, LocalTime time)
     {
         ArrayList<Event> events = new ArrayList<>();
@@ -35,6 +36,28 @@ public class Event
 
         return events;
     }
+
+    public static ArrayList<Event> parseEventsList(String data) {
+        ArrayList<Event> eventsList = new ArrayList<>();
+
+        // Parse the data string and create Event objects
+        // Example: Assuming data is in the format: "eventName,date,time;eventName,date,time;..."
+        String[] eventStrings = data.split(";");
+        for (String eventString : eventStrings) {
+            String[] eventParts = eventString.split(",");
+            if (eventParts.length == 3) {
+                String eventName = eventParts[0];
+                LocalDate date = LocalDate.parse(eventParts[1]);
+                LocalTime time = LocalTime.parse(eventParts[2]);
+
+                Event event = new Event(eventName, date, time);
+                eventsList.add(event);
+            }
+        }
+
+        return eventsList;
+    }
+
 
 
     private String name;

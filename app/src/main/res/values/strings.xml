@@ -2,4 +2,27 @@
     <string name="app_name">Emotion Control</string>
     <string name="back"><![CDATA[<-]]></string>
     <string name="forward"><![CDATA[->]]></string>
+    <string name="choose_emotion">Choose your emotion</string>
+    <string-array name="emotions_array">
+        <item><b>Happy</b></item>
+        <item><b>Grateful</b></item>
+        <item><b>Content</b></item>
+        <item><b>Excited</b></item>
+        <item><b>Joyful</b></item>
+        <item><b>Sad</b></item>
+        <item><b>Angry</b></item>
+        <item><b>Anxious</b></item>
+        <item><b>Frustrated</b></item>
+        <item><b>Disappointed</b></item>
+        <item><b>Calm</b></item>
+        <item><b>Indifferent</b></item>
+        <item><b>Neutral</b></item>
+        <item><b>Bored</b></item>
+        <item><b>Apathetic</b></item>
+        <item><b>Stressed</b></item>
+        <item><b>Worried</b></item>
+        <item><b>Overwhelmed</b></item>
+        <item><b>Nervous</b></item>
+        <item><b>Agitated</b></item>
+    </string-array>
 </resources>

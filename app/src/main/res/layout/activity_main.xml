@@ -18,13 +18,13 @@
         android:text="Emotion Control"
         android:textSize="30sp"
         android:textColor="#5843B6"
-        app:layout_constraintBottom_toTopOf="@+id/email_Textfield"
+        app:layout_constraintBottom_toTopOf="@+id/username_Textfield"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/email_Textfield"
+        android:id="@+id/username_Textfield"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="350dp"
         android:layout_height="50dp"
@@ -32,7 +32,7 @@
         android:layout_marginBottom="171dp"
         android:background="@drawable/fileds"
         android:ems="10"
-        android:hint="  email"
+        android:hint="username"
         android:inputType="textEmailAddress"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/image_Button"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_Textfield" />
+        app:layout_constraintTop_toBottomOf="@+id/username_Textfield" />
 
 
     <Button
@@ -66,7 +66,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_Textfield" />
+        app:layout_constraintTop_toBottomOf="@+id/username_Textfield" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
